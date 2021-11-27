@@ -1,6 +1,8 @@
 # gun-pack
 `react cli` &nbsp; `react compiler`
 
+[github](https://github.com/shengunbaba/gun-pack)
+
 ## usage
 #### react build tool, Support Typescript
 ```jsx
@@ -31,6 +33,7 @@ const config = {
     publicPath: '/',
     entry:Object<webpackEntry> | null
     htmlPlugin:Array<webpackHtmlPlugin> | null
+    proxy:Object<webpackDevServerProxy>
 }
 
 module.exports = config
@@ -47,5 +50,5 @@ Parameter description
 | publicPath  | <string> default '/' |
 | entry  | Object\<webpackEntry\> / null when default_entry is false, customize yourself |
 | htmlPlugin  | Array\<webpackHtmlPlugin\> / null when default_htmlPlugin is false, customize yourself |
-
+| proxy  | Object\<webpackDevServerProxy\>|
 

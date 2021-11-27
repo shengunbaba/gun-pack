@@ -6,7 +6,13 @@ const config = {
     publicPath: '/',
     writeToDisk: false,
     entry: null,
-    htmlPlugin: null
+    htmlPlugin: null,
+    proxy: {
+        // '/api': {
+        //     target: 'http://localhost:3000',
+        //     pathRewrite: {'^/api': ''},
+        // },
+    },
 }
 
 module.exports = config
