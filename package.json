@@ -1,0 +1,60 @@
+{
+  "name": "gun-pack",
+  "version": "1.0.0",
+  "description": "react build tools",
+  "main": "lib/server.js",
+  "bin": {
+    "gun-pack": "lib/server.js"
+  },
+  "scripts": {
+    "start": "node ./_node_modules/gun-pack/lib/server.js dev",
+    "build": "node ./_node_modules/gun-pack/lib/server.js build",
+    "server": "node ./_node_modules/gun-pack/lib/server.js server",
+    "": ""
+  },
+  "author": "zhangli",
+  "license": "CC0-1.0",
+  "keywords": [
+    "react",
+    "build",
+    "tools",
+    "compiler",
+    "less",
+    "HMR"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-decorators": "^7.16.4",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.2.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.0.2",
+    "react-router-dom": "^6.0.2",
+    "redux": "^4.1.2"
+  }
+}
