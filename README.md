@@ -33,7 +33,12 @@ const config = {
     publicPath: '/',
     entry:Object<webpackEntry> | null
     htmlPlugin:Array<webpackHtmlPlugin> | null
-    proxy:Object<webpackDevServerProxy>
+     proxy: {
+       '/api': {
+           target: 'http://localhost:3000',
+           pathRewrite: {'^/api': ''},
+       },
+  },
 }
 
 module.exports = config
