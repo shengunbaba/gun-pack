@@ -9,3 +9,4 @@ tsconfig.json
 webpack.config.ts
 src
 yarn.lock
+publish.js

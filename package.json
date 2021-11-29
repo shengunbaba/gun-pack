@@ -1,6 +1,6 @@
 {
   "name": "gun-pack",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "react build tools",
   "main": "lib/server.js",
   "bin": {
@@ -10,7 +10,7 @@
     "start": "node ./_node_modules/gun-pack/lib/server.js dev",
     "build": "node ./_node_modules/gun-pack/lib/server.js build",
     "server": "node ./_node_modules/gun-pack/lib/server.js server",
-    "": ""
+    "_publish": "node publish.js && npm publish"
   },
   "author": "zhangli",
   "license": "CC0-1.0",
@@ -39,6 +39,7 @@
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "mini-css-extract-plugin": "^2.4.5",
+    "nrm": "^1.2.5",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.2.5",
     "url-loader": "^4.1.1",
