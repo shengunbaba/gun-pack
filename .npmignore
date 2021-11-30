@@ -10,3 +10,4 @@ webpack.config.ts
 src
 yarn.lock
 publish.js
+_node_modules
