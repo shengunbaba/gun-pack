@@ -33,11 +33,15 @@ const config = {
     publicPath: '/',
     entry:Object<webpackEntry> | null
     htmlPlugin:Array<webpackHtmlPlugin> | null
-     proxy: {
+    proxy: {
        '/api': {
            target: 'http://localhost:3000',
            pathRewrite: {'^/api': ''},
        },
+    definePlugin:{
+        'process.env.NODE_ENV': JSON.stringify('production'),
+        'definePlugin':JSON.stringify('definePlugin'),
+    }
   },
 }
 
@@ -56,4 +60,5 @@ Parameter description
 | entry  | Object\<webpackEntry\> / null when default_entry is false, customize yourself |
 | htmlPlugin  | Array\<webpackHtmlPlugin\> / null when default_htmlPlugin is false, customize yourself |
 | proxy  | Object\<webpackDevServerProxy\>|
+| definePlugin  | Object\<webpack.definePlugin\>, when gun-pack dev , process.env.NODE_ENV default development, when gun-pack build , process.env.NODE_ENV default production|
 

@@ -13,6 +13,7 @@ const config = {
         //     pathRewrite: {'^/api': ''},
         // },
     },
+    definePlugin: {},
 }
 
 module.exports = config

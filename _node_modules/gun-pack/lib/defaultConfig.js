@@ -7,5 +7,6 @@ module.exports = {
     writeToDisk: false,
     entry: null,
     htmlPlugin: null,
-    proxy: {}
+    proxy: {},
+    definePlugin: {},
 }

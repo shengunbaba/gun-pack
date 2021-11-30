@@ -1,6 +1,6 @@
 {
   "name": "gun-pack",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react build tools",
   "main": "lib/server.js",
   "bin": {
@@ -39,7 +39,6 @@
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "mini-css-extract-plugin": "^2.4.5",
-    "nrm": "^1.2.5",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.2.5",
     "url-loader": "^4.1.1",
