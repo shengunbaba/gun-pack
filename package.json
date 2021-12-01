@@ -1,6 +1,6 @@
 {
   "name": "gun-pack",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "react build tools",
   "main": "lib/server.js",
   "bin": {
