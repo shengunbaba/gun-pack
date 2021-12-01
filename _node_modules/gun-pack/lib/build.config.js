@@ -63,7 +63,7 @@ module.exports = merge(commonConfig, {
     plugins: [
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production'),
-            ...config.definePlugin,
+            ...config.definePluginOption,
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[hash:5].css',

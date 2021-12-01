@@ -1,12 +1,12 @@
 module.exports = {
     port: 9000,
-    default_entry: true,
-    default_htmlPlugin: true,
-    open_browser: false,
+    defaultEntry: true,
+    defaultHtmlPlugin: true,
+    openBrowser: false,
     publicPath: '/',
     writeToDisk: false,
-    entry: null,
-    htmlPlugin: null,
-    proxy: {},
-    definePlugin: {},
+    entry: null,        //  null | object | Array
+    proxy: null,         //  null | object | Array
+    htmlPluginOption: null,   //  null | Array<object>
+    definePluginOption: null,   //  null | object
 }

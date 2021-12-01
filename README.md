@@ -26,23 +26,29 @@ example:
 ```jsx
 const config = {
     port: 9000,                         
-    open_browser: false,
-    default_entry: true,  
-    default_htmlPlugin: true  
+    defaultEntry: true,
+    defaultHtmlPlugin: true,
+    openBrowser: false,
     writeToDisk: false
     publicPath: '/',
-    entry:Object<webpackEntry> | null
-    htmlPlugin:Array<webpackHtmlPlugin> | null
+    entry:null,                      // Object<webpackEntry> | null | array<webpackEntry>
     proxy: {
        '/api': {
            target: 'http://localhost:3000',
            pathRewrite: {'^/api': ''},
        },
-    definePlugin:{
+    },
+    htmlPluginOption: [                    //  null | Array<object>
+        {                   
+            template: path.join(__dirname, './src/index.html'),
+            chunks: ['main', 'react'],
+            options
+        }
+    ], 
+    definePluginOption:{
         'process.env.NODE_ENV': JSON.stringify('production'),
         'definePlugin':JSON.stringify('definePlugin'),
     }
-  },
 }
 
 module.exports = config
@@ -57,8 +63,8 @@ Parameter description
 | default_htmlPlugin  |<boolean>  Use default htmlPlugin /src/index.html ; default true |
 | writeToDisk  | <boolean> default false |
 | publicPath  | <string> default '/' |
-| entry  | Object\<webpackEntry\> / null when default_entry is false, customize yourself |
-| htmlPlugin  | Array\<webpackHtmlPlugin\> / null when default_htmlPlugin is false, customize yourself |
+| entry  | Object\<webpackEntry\> / null when defaultEntry is false, customize yourself |
 | proxy  | Object\<webpackDevServerProxy\>|
-| definePlugin  | Object\<webpack.definePlugin\>, when gun-pack dev , process.env.NODE_ENV default development, when gun-pack build , process.env.NODE_ENV default production|
+| htmlPluginOption  |  Array<object> / null when defaultHtmlPlugin is false, customize yourself |
+| definePluginOption  | Object\<webpack.definePlugin.option\>, when gun-pack dev , process.env.NODE_ENV default development, when gun-pack build , process.env.NODE_ENV default production|
 

@@ -1,19 +1,14 @@
 const config = {
     port: 9000,
-    default_entry: true,
-    default_htmlPlugin: true,
-    open_browser: false,
+    defaultEntry: true,
+    defaultHtmlPlugin: true,
+    openBrowser: false,
     publicPath: '/',
     writeToDisk: false,
-    entry: null,
-    htmlPlugin: null,
-    proxy: {
-        // '/api': {
-        //     target: 'http://localhost:3000',
-        //     pathRewrite: {'^/api': ''},
-        // },
-    },
-    definePlugin: {},
+    entry: null,            //  null | object | Array
+    proxy: null,             //  null | object
+    htmlPluginOption: null,       //  null | Array<object>
+    definePluginOption: null,     //  null | object
 }
 
 module.exports = config
