@@ -45,12 +45,12 @@ const base = {
                 ],
             },
             {
-                test: /\.(jpg|png|gif|jpeg)$/,
+                test: /\.(jpg|png|gif|jpeg)$/i,
                 use:
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 10000,
+                            limit: 8192,
                             name: 'images/[hash:8].[name].[ext]',
                         },
                     },

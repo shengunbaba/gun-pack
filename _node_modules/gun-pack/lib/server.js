@@ -31,7 +31,7 @@ if (argv === 'dev') {
     });
 
     compiler.hooks.done.tap('done', function (data) {
-        console.log('\x1B[35m%s\x1B[0m', '\n compiler complete')
+        console.log('\x1B[35m%s\x1B[0m', '\ncompiler complete')
     });
 }
 
@@ -45,7 +45,7 @@ if (argv === 'build') {
             if (isHasPublic) {
                 copy(origin, target)
             }
-            console.log('\x1B[35m%s\x1B[0m', '\n compiler complete')
+            console.log('\x1B[35m%s\x1B[0m', '\ncompiler complete')
         }
     })
 }

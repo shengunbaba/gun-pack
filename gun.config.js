@@ -9,6 +9,8 @@ const config = {
     proxy: null,             //  null | object
     htmlPluginOption: null,       //  null | Array<object>
     definePluginOption: null,     //  null | object
+    hot: true,
+    liveReload: false
 }
 
 module.exports = config
