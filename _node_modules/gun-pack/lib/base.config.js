@@ -38,7 +38,7 @@ const base = {
                                 ['@babel/plugin-proposal-class-properties', {'loose': true}],
                                 ['@babel/plugin-proposal-private-property-in-object', {'loose': true}],
                                 ['@babel/transform-runtime'],
-                                ["import", {"libraryName": "antd", "style": 'css'}]
+                                ["import", {"libraryName": "antd", "style": true}]
                             ],
                         },
                     },
