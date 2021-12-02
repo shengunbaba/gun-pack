@@ -48,7 +48,9 @@ const config = {
     definePluginOption:{
         'process.env.NODE_ENV': JSON.stringify('production'),
         'definePlugin':JSON.stringify('definePlugin'),
-    }
+    },
+    hot: true,
+    liveReload: false
 }
 
 module.exports = config
