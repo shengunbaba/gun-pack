@@ -11,3 +11,4 @@ src
 yarn.lock
 publish.js
 _node_modules
+static
