@@ -5,10 +5,12 @@ import {Route, Routes, BrowserRouter} from 'react-router-dom';
 import PageA from "./pageA";
 import PageB from "./pageB";
 
+import './test.js'
 
 const decorator = (target) => {
     target.a = 1;
 }
+
 
 @decorator
 class App extends React.Component {

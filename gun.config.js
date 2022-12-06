@@ -4,12 +4,12 @@ const config = {
     defaultHtmlPlugin: true,
     openBrowser: false,
     publicPath: '/',
-    writeToDisk: false,
+    writeToDisk: true,
     entry: null,            //  null | object | Array
     proxy: null,             //  null | object
     htmlPluginOption: null,       //  null | Array<object>
     definePluginOption: null,     //  null | object
-    hot: true,
+    hot: false,
     liveReload: false
 }
 
