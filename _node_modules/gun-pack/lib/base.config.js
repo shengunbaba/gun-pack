@@ -127,4 +127,8 @@ if (config.defaultHtmlPlugin) {
         base.plugins.push(new HtmlWebpackPlugin(option));
     }
 }
+
+if (config.alias) {
+    base.resolve.alias = config.alias;
+}
 module.exports = base;
