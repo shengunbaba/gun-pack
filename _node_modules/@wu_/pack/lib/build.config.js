@@ -3,7 +3,7 @@ const {merge} = require('webpack-merge');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const commonConfig = require('./base.config.js');
-const gun = require('../../../wu.config.js');
+const gun = require('../../../../wu.config.js');
 const defaultConfig = require('./defaultConfig');
 const config = {...defaultConfig, ...gun};
 

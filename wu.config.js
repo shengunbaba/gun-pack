@@ -1,5 +1,5 @@
 const config = {
-    port: 9000,
+    port: 9001,
     defaultEntry: true,
     defaultHtmlPlugin: true,
     openBrowser: false,

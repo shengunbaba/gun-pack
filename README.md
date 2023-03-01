@@ -1,4 +1,4 @@
-# gun-pack
+# @wu_/pack
 `react cli` &nbsp; `react compiler`
 
 [github](https://github.com/shengunbaba/gun-pack)
@@ -6,21 +6,21 @@
 ## usage
 #### react build tool, Support Typescript
 ```jsx
-    yarn add gun-pack 
+    yarn add @wu_/pack 
 ```
 
 - package.json scripts
 ```jsx
-   gun-pack  dev
-   gun-pack  build
+   wu dev
+   wu build
 
    // after you build, also you can startup service
-   gun-pack  server
+   wu server
 ```
 
 
 #### You can customize your compiler configuration in your root directory
-- gun.config.js
+- wu.config.js
 example:
 
 ```jsx
@@ -29,7 +29,7 @@ const config = {
     defaultEntry: true,
     defaultHtmlPlugin: true,
     openBrowser: false,
-    writeToDisk: false
+    writeToDisk: false,
     publicPath: '/',
     entry:null,                      // Object<webpackEntry> | null | array<webpackEntry>
     proxy: {
