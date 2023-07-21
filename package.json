@@ -1,6 +1,6 @@
 {
   "name": "wuzh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react build tools",
   "main": "lib/server.js",
   "bin": {

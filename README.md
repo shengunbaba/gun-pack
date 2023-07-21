@@ -1,4 +1,4 @@
-# @wu_/pack
+# wuzh
 `react cli` &nbsp; `react compiler`
 
 [github](https://github.com/shengunbaba/gun-pack)
@@ -6,7 +6,7 @@
 ## usage
 #### react build tool, Support Typescript
 ```jsx
-    yarn add @wu_/pack 
+    yarn add wuzh 
 ```
 
 - package.json scripts
